@@ -1,0 +1,7 @@
+schema: http://localhost:4000/graphql
+documents: "graphql/**/*.ts"
+generates:
+  ./graphql/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations

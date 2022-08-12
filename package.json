@@ -6,14 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "schemaDownload": "apollo schema:download --endpoint=http://localhost:4000/graphql schema.graphql",
+    "codegen": "graphql-code-generator --config ./codegen.yml --watch"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@graphql-codegen/typescript": "^2.7.2",
+    "@graphql-codegen/typescript-operations": "^2.5.2",
+    "@reduxjs/toolkit": "^1.8.3",
+    "bootstrap": "^5.2.0",
+    "graphql": "^16.5.0",
     "next": "12.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.11.3",
     "@types/node": "18.6.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
